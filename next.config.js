@@ -11,6 +11,16 @@ const redirects = async () => {
 			destination: "/api/hello",
 			permanent: false,
 		},
+		{
+			source: "/users",
+			destination: "/api/users",
+			permanent: false,
+		},
+		{
+			source: "/users/:path*",
+			destination: "/api/users/:path*",
+			permanent: false,
+		},
 	];
 };
 
